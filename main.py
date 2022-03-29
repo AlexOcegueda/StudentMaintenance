@@ -4,8 +4,8 @@ import menu
 
 def main():
     students = [["Kyle Yates", 1975],
-                  ["On the Waterfront", 1954],
-                  ["Cat on a Hot Tin Roof", 1958]]
+                ["On the Waterfront", 1954],
+                ["Cat on a Hot Tin Roof", 1958]]
 
     menu.display_menu()
 
@@ -18,6 +18,8 @@ def main():
         elif command == "3":
             menu.delete(students)
         elif command == "4":
+            menu.update(students)
+        elif command == "5":
             break
         else:
             print("Not a valid command. Please try again.\n")
