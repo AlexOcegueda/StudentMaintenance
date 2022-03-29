@@ -1,6 +1,7 @@
+import data_valid
 def list(students):
     if len(students) == 0:
-        print("There are no movies in the list.\n")
+        print("There are no students in the list.\n")
     else:
         for i, student in enumerate(students, start=1):
             print(f"{i}. {student[0]} ({student[1]})")
@@ -25,14 +26,17 @@ def delete(students):
 
 
 def update(students):
-    print("Place holder for later")
-
+    edit_num = input(f'Enter which student you want to edit:')
+    data_valid.yes_or_no()
+    name = input("Name: ")
+    id = input("ID: ")
+    students[int(edit_num) - 1] = (name, id)
 
 def display_menu():
     print("COMMAND MENU")
     print("1 - List all students")
-    print("2 -  Add a student")
-    print("3 -  Delete a student")
+    print("2 - Add a student")
+    print("3 - Delete a student")
     print("4 - Update student")
-    print("4 - Exit program")
+    print("5 - Exit program")
     print()
