@@ -9,8 +9,8 @@ def list(students):
 
 def add(students):
     name = input("Name: ")
-    year = input("Year: ")
-    student = [name, year]
+    id = input("ID: ")
+    student = [name, id]
     students.append(student)
     print(f"{student[0]} was added.\n")
 
@@ -24,10 +24,15 @@ def delete(students):
         print(f"{student[0]} was deleted.\n")
 
 
+def update(students):
+    print("Place holder for later")
+
+
 def display_menu():
     print("COMMAND MENU")
-    print("1 - List all movies")
-    print("2 -  Add a movie")
-    print("3 -  Delete a movie")
+    print("1 - List all students")
+    print("2 -  Add a student")
+    print("3 -  Delete a student")
+    print("4 - Update student")
     print("4 - Exit program")
     print()
