@@ -28,10 +28,10 @@ def delete(movie_list):
 
 def display_menu():
     print("COMMAND MENU")
-    print("list - List all movies")
-    print("add -  Add a movie")
-    print("del -  Delete a movie")
-    print("exit - Exit program")
+    print("1 - List all movies")
+    print("2 -  Add a movie")
+    print("3 -  Delete a movie")
+    print("4 - Exit program")
     print()
 
 
@@ -44,9 +44,9 @@ def main():
 
     while True:
         command = input("Command: ")
-        if command == "1.) List":
+        if command == "1":
             list(movie_list)
-        elif command == "2.) Add":
+        elif command == "2":
             add(movie_list)
         elif command == "3":
             delete(movie_list)
