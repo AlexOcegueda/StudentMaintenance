@@ -1,27 +1,27 @@
-def list(movie_list):
-    if len(movie_list) == 0:
+def list(students):
+    if len(students) == 0:
         print("There are no movies in the list.\n")
     else:
-        for i, movie in enumerate(movie_list, start=1):
-            print(f"{i}. {movie[0]} ({movie[1]})")
+        for i, student in enumerate(students, start=1):
+            print(f"{i}. {student[0]} ({student[1]})")
         print()
 
 
-def add(movie_list):
+def add(students):
     name = input("Name: ")
     year = input("Year: ")
-    movie = [name, year]
-    movie_list.append(movie)
-    print(f"{movie[0]} was added.\n")
+    student = [name, year]
+    students.append(student)
+    print(f"{student[0]} was added.\n")
 
 
-def delete(movie_list):
+def delete(students):
     number = int(input("Number: "))
-    if number < 1 or number > len(movie_list):
-        print("Invalid movie number.\n")
+    if number < 1 or number > len(students):
+        print("Invalid student id.\n")
     else:
-        movie = movie_list.pop(number - 1)
-        print(f"{movie[0]} was deleted.\n")
+        student = students.pop(number - 1)
+        print(f"{student[0]} was deleted.\n")
 
 
 def display_menu():

@@ -7,16 +7,16 @@ def main():
                   ["On the Waterfront", 1954],
                   ["Cat on a Hot Tin Roof", 1958]]
 
-    display_menu()
+    menu.display_menu()
 
     while True:
         command = input("Command: ")
         if command == "1":
-            list(students)
+            menu.list(students)
         elif command == "2":
-            add(students)
+            menu.add(students)
         elif command == "3":
-            delete(students)
+            menu.delete(students)
         elif command == "4":
             break
         else:
