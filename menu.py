@@ -1,4 +1,6 @@
 import data_valid
+
+
 def list(students):
     if len(students) == 0:
         print("There are no students in the list.\n")
@@ -26,11 +28,15 @@ def delete(students):
 
 
 def update(students):
-    edit_num = input(f'Enter which student you want to edit:')
-    data_valid.yes_or_no()
-    name = input("Name: ")
+    num = int(input(f'Enter which student you want to edit:'))
+    student_old = students[num - 1]
+    data_valid.yes_or_no(f'Are you sure you want to edit {student_old[0]}')
+    name = input("Name: ").title()  # make sure students name is Capital
     id = input("ID: ")
-    students[int(edit_num) - 1] = (name, id)
+    students[int(num) - 1] = (name, id)
+    student = students[num - 1]
+    print(f'{student_old[0]} was replaced with {student[0]}')
+
 
 def display_menu():
     print("COMMAND MENU")
