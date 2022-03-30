@@ -1,3 +1,6 @@
+import main
+
+
 def yes_or_no(prompt):
     """
 
@@ -12,7 +15,7 @@ def yes_or_no(prompt):
         if user_input in ['y', 'yes']:
             return True
         elif user_input in ['n', 'no']:
-            return False
+            main.main()
         else:
             print(f'Invalid Input: {prompt}')
 
