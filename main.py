@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 import menu
 
+__program_name__ = "Student Maintenance"
+__author__ = "Kyle Yates, Alex Ocegueda"
+__version__ = "1.0"
+__github__ = "https://github.com/AlexOcegueda/StudentMaintenance"
+
 
 def main():
     students = [['Bruno', 'Zamora', 20],
