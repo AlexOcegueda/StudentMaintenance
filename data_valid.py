@@ -1,4 +1,4 @@
-import main
+from main import main
 
 
 def yes_or_no(prompt):
@@ -29,7 +29,7 @@ def valid_num_range(prompt, high, low):
     :return: a valid number between the ranges specified
     """
     while True:
-        user_input = input(f'{prompt} (Valid {low}-{high}: ')
+        user_input = input(f'{prompt} (Valid {low}-{high}): ')
 
         if type == 'int':
             number = int(user_input)
