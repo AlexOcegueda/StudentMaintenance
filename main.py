@@ -11,7 +11,7 @@ def main():
         menu.display_menu()
         command = input('Command: ')
         if command == '1':
-            menu.list(students)
+            menu.list_students(students)
         elif command == '2':
             menu.add(students)
         elif command == '3':
