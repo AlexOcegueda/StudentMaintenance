@@ -8,9 +8,9 @@ __github__ = "https://github.com/AlexOcegueda/StudentMaintenance"
 
 
 def main():
-    students = [['Bruno', 'Zamora', 20],
-                ['Ela', 'Cross', 30],
-                ['Amira', 'Hogarth', 45]]
+    students = [['Bruno', 'Mars', 20],
+                ['Katy', 'Perry', 30],
+                ['Zendaya', 'Maree', 45]]
 
     while True:
         menu.display_menu()
