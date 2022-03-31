@@ -3,13 +3,12 @@ import menu
 
 
 def main():
-    students = [['Bruno Zamora', 20],
-                ['Ela Cross', 30],
-                ['Amira Hogarth', 45]]
-
-    menu.display_menu()
+    students = [['Bruno', 'Zamora', 20],
+                ['Ela', 'Cross', 30],
+                ['Amira', 'Hogarth', 45]]
 
     while True:
+        menu.display_menu()
         command = input('Command: ')
         if command == '1':
             menu.list(students)
