@@ -3,7 +3,7 @@ import menu
 
 __program_name__ = "Student Maintenance"
 __author__ = "Kyle Yates, Alex Ocegueda"
-__version__ = "1.0"
+__version__ = "2.0"
 __github__ = "https://github.com/AlexOcegueda/StudentMaintenance"
 
 
