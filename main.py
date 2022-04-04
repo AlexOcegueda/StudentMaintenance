@@ -8,12 +8,19 @@ __github__ = "https://github.com/AlexOcegueda/StudentMaintenance"
 
 
 def main():
+    """
+    Main method used to print menu and take user input.
+    :return:
+        Menu and their desired command.
+    """
     students = [['Bruno', 'Mars', 20],
                 ['Katy', 'Perry', 30],
                 ['Zendaya', 'Maree', 45]]
 
     while True:
+        # display menu
         menu.display_menu()
+        # Check what command they entered.
         command = input('Command: ')
         if command == '1':
             menu.list_students(students)
