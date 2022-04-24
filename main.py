@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
-import menu
+from data_valid import valid_num_range
+from student_maint import add
+from student_maint import display_menu
+from student_maint import delete
+from student_maint import update
+from student_maint import list_students
 
+"""
+Main module to call other functions in different modules to manage
+and maintain student lists.
+"""
 __program_name__ = "Student Maintenance"
 __author__ = "Kyle Yates, Alex Ocegueda"
 __version__ = "2.0"
@@ -13,24 +22,21 @@ def main():
     :return:
         Menu and their desired command.
     """
-    students = [['Bruno', 'Mars', 20],
-                ['Katy', 'Perry', 30],
-                ['Zendaya', 'Maree', 45]]
 
     while True:
         # display menu
-        menu.display_menu()
+        display_menu()
         # Check what command they entered.
-        command = input('Command: ')
-        if command == '1':
-            menu.list_students(students)
-        elif command == '2':
-            menu.add(students)
-        elif command == '3':
-            menu.delete(students)
-        elif command == '4':
-            menu.update(students)
-        elif command == '5':
+        command = int(valid_num_range('Command', 5, 1))
+        if command == 1:
+            list_students()
+        elif command == 2:
+            add()
+        elif command == 3:
+            delete()
+        elif command == 4:
+            update()
+        elif command == 5:
             break
         else:
             print('Not a valid command. Please try again.\n')

@@ -2,6 +2,10 @@ __program_name__ = "Student Maintenance"
 __author__ = "Kyle Yates, Alex Ocegueda"
 __version__ = "2.0"
 __github__ = "https://github.com/AlexOcegueda/StudentMaintenance"
+"""
+Module to check data validation of the students being added
+to the lists.
+"""
 
 
 def yes_or_no(prompt):
@@ -43,7 +47,7 @@ def valid_num_range(prompt, high, low):
         else:
             number = float(user_input)
 
-        if low <= number <= high:   # checks if between range
+        if low <= number <= high:  # checks if between range
             return number
         else:
             print(f'Invalid input')
